@@ -1,0 +1,5709 @@
+/* =========================================================
+   M. SUBAIB OPTICAL
+   HERO SECTION — FINAL RESPONSIVE VERSION
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+    position: relative;
+
+    width: 100%;
+    height: 520px;
+
+    overflow: hidden;
+
+    background-image: url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center 46%;
+}
+
+
+/* =========================================================
+   BACKGROUND OVERLAY
+========================================================= */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 249, 235, 0.15),
+            rgba(255, 249, 235, 0.02) 60%,
+            rgba(255, 255, 255, 0.02)
+        );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: absolute;
+
+    top: 0;
+    left: 1.4%;
+    right: 1.4%;
+
+    height: 70px;
+
+    padding: 0 43px;
+
+    display: flex;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    border-radius: 0 0 17px 17px;
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 7px 25px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    z-index: 20;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+
+    width: 130px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.nav-links {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 36px;
+}
+
+.nav-links a {
+    position: relative;
+
+    color: #111;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #18822f;
+    transform: translateY(-1px);
+}
+
+.nav-links a.active {
+    color: #18822f;
+}
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #18822f;
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   NAVBAR WHATSAPP
+========================================================= */
+
+.navbar-whatsapp {
+    width: 126px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 9px;
+
+    color: #fff;
+    background: #16852f;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    box-shadow:
+        0 6px 16px rgba(22, 133, 47, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.navbar-whatsapp:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(22, 133, 47, 0.30);
+}
+
+
+/* =========================================================
+   WHATSAPP SVG
+========================================================= */
+
+.whatsapp-icon {
+    width: 15px;
+    height: 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.whatsapp-icon svg path:nth-child(2) {
+    fill: currentColor;
+    stroke: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+    position: absolute;
+
+    left: 6.3%;
+    top: 125px;
+
+    width: 390px;
+
+    z-index: 7;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.hero-content h1 {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 0 10px;
+
+    font-size: 66px;
+    line-height: 0.92;
+
+    letter-spacing: -2.7px;
+}
+
+.hero-content h1 span {
+    color: #14842e;
+    font-weight: 700;
+}
+
+.hero-content h1 strong {
+    color: #050505;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TAGLINE
+========================================================= */
+
+.hero-content h2 {
+    margin: 0 0 8px;
+
+    color: #111;
+
+    font-size: 17px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-content p {
+    margin: 0 0 17px;
+
+    color: #555;
+
+    font-size: 12.5px;
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.hero-btn {
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 13px 0 17px;
+
+    border-radius: 9px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Green button */
+
+.primary-btn {
+    width: 168px;
+
+    color: #fff;
+    background: #16852f;
+
+    box-shadow:
+        0 7px 17px rgba(22, 133, 47, 0.22);
+}
+
+.primary-btn:hover {
+    box-shadow:
+        0 10px 22px rgba(22, 133, 47, 0.30);
+}
+
+
+/* White glass button */
+
+.whatsapp-btn {
+    width: 155px;
+
+    color: #222;
+
+    background: rgba(255, 255, 255, 0.76);
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 6px 17px rgba(0, 0, 0, 0.06);
+}
+
+.whatsapp-btn:hover {
+    box-shadow:
+        0 9px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   SMALL WHATSAPP ICON
+========================================================= */
+
+.whatsapp-small {
+    width: 15px;
+    height: 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.whatsapp-small svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.whatsapp-small svg path:nth-child(2) {
+    fill: currentColor;
+    stroke: none;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.arrow {
+    margin-left: 8px;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   PREMIUM EYEWEAR BADGE
+========================================================= */
+
+.premium-badge {
+    position: absolute;
+
+    left: 42.5%;
+    top: 175px;
+
+    width: 82px;
+    height: 82px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid rgba(255, 237, 168, 0.72);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.58),
+            rgba(255, 255, 255, 0.12)
+        );
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 10px rgba(255, 226, 119, 0.55),
+        0 0 27px rgba(255, 226, 119, 0.30),
+        inset 0 0 16px rgba(255, 255, 255, 0.48);
+
+    z-index: 5;
+
+    animation: premiumGlow 3s ease-in-out infinite;
+}
+
+
+@keyframes premiumGlow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 10px rgba(255, 226, 119, 0.50),
+            0 0 25px rgba(255, 226, 119, 0.25),
+            inset 0 0 15px rgba(255, 255, 255, 0.45);
+    }
+
+    50% {
+        box-shadow:
+            0 0 17px rgba(255, 226, 119, 0.78),
+            0 0 35px rgba(255, 226, 119, 0.40),
+            inset 0 0 20px rgba(255, 255, 255, 0.62);
+    }
+}
+
+
+/* =========================================================
+   EYEGLASSES ICON
+========================================================= */
+
+.premium-icon {
+    width: 32px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 3px;
+}
+
+.premium-icon svg {
+    width: 31px;
+    height: 20px;
+
+    fill: none;
+
+    stroke: #187b32;
+    stroke-width: 2.3;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.premium-badge p {
+    margin: 0;
+
+    color: #111;
+
+    font-size: 11px;
+    line-height: 1.05;
+
+    text-align: center;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   BOY IMAGE — DESKTOP
+========================================================= */
+
+.hero-boy {
+    position: absolute;
+
+    bottom: 0;
+
+    right: 5.2%;
+
+    height: 90%;
+
+    width: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    user-select: none;
+}
+
+
+/* =========================================================
+   SOFT LIGHT BEHIND BOY
+========================================================= */
+
+.hero-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 370px;
+    height: 370px;
+
+    right: 10%;
+    top: 90px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 229, 139, 0.19) 0%,
+            rgba(255, 229, 139, 0.08) 35%,
+            transparent 72%
+        );
+
+    filter: blur(12px);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   EXTRA GOLDEN GLOW
+========================================================= */
+
+.hero-section::before {
+    content: "";
+
+    position: absolute;
+
+    left: 37%;
+    top: 180px;
+
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 237, 164, 0.20),
+            rgba(255, 237, 164, 0.06) 35%,
+            transparent 72%
+        );
+
+    filter: blur(13px);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   BOTTOM BENEFITS GLASS — DESKTOP
+========================================================= */
+
+.hero-benefits {
+    position: absolute;
+
+    left: 21.5%;
+    right: 21.5%;
+
+    bottom: 18px;
+
+    min-height: 58px;
+
+    padding: 8px 24px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.74);
+
+    border: 1px solid rgba(255, 255, 255, 0.82);
+
+    border-radius: 13px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.90);
+
+    z-index: 10;
+}
+
+
+/* Top shine */
+
+.hero-benefits::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 5%;
+    right: 5%;
+
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   BENEFIT ITEM
+========================================================= */
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+
+    min-width: 0;
+
+    gap: 10px;
+
+    padding: 0 13px;
+
+    border-right: 1px solid rgba(80, 80, 80, 0.08);
+}
+
+.benefit-item:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   BENEFIT SVG ICON
+========================================================= */
+
+.benefit-icon {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #6f6f6f;
+}
+
+.benefit-icon svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =========================================================
+   BENEFIT TEXT
+========================================================= */
+
+.benefit-text {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.1;
+
+    min-width: 0;
+}
+
+.benefit-text span {
+    color: #222;
+
+    font-size: 9.5px;
+    font-weight: 600;
+}
+
+.benefit-text small {
+    margin-top: 2px;
+
+    color: #333;
+
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero-content {
+        left: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+    }
+
+    .premium-badge {
+        left: 43%;
+    }
+
+    .hero-boy {
+        right: 1%;
+        height: 87%;
+    }
+
+    .hero-benefits {
+        left: 15%;
+        right: 15%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =========================================
+       HERO
+    ========================================== */
+
+    .hero-section {
+        width: 100%;
+
+        height: 720px;
+        min-height: 720px;
+
+        background-size: cover;
+
+        background-position: 56% center;
+    }
+
+
+    /* =========================================
+       NAVBAR
+    ========================================== */
+
+    .navbar {
+        top: 0;
+
+        left: 10px;
+        right: 10px;
+
+        height: 62px;
+
+        padding: 0 16px;
+
+        border-radius: 0 0 15px 15px;
+    }
+
+
+    .logo {
+        width: 115px;
+    }
+
+    .logo img {
+        width: 105px;
+        height: auto;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .navbar-whatsapp {
+        width: 110px;
+        min-width: 110px;
+
+        height: 32px;
+
+        gap: 5px;
+
+        font-size: 10px;
+
+        border-radius: 8px;
+    }
+
+    .whatsapp-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    /* =========================================
+       HERO CONTENT
+    ========================================== */
+
+    .hero-content {
+        left: 7%;
+
+        top: 112px;
+
+        width: 86%;
+
+        z-index: 8;
+    }
+
+
+    .hero-content h1 {
+        margin-bottom: 10px;
+
+        font-size: clamp(45px, 12vw, 58px);
+
+        line-height: 0.91;
+
+        letter-spacing: -2px;
+    }
+
+
+    .hero-content h2 {
+        margin-bottom: 8px;
+
+        font-size: 14px;
+
+        line-height: 1.35;
+    }
+
+
+    .hero-content p {
+        margin-bottom: 15px;
+
+        font-size: 11.5px;
+
+        line-height: 1.5;
+    }
+
+    .hero-content p br {
+        display: none;
+    }
+
+
+    /* =========================================
+       BUTTONS
+    ========================================== */
+
+    .hero-buttons {
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        gap: 8px;
+    }
+
+    .hero-btn {
+        height: 35px;
+
+        padding-left: 13px;
+        padding-right: 11px;
+
+        border-radius: 8px;
+
+        font-size: 10px;
+    }
+
+    .primary-btn {
+        width: 155px;
+    }
+
+    .whatsapp-btn {
+        width: 145px;
+    }
+
+    .arrow {
+        margin-left: 5px;
+
+        font-size: 16px;
+    }
+
+
+    /* =========================================
+       PREMIUM BADGE
+       MOBILE POSITION
+       Boy ke face / eye level ke paas
+    ========================================== */
+
+    .premium-badge {
+
+        /*
+           Center point of screen
+        */
+        left: 50%;
+        right: auto;
+
+        /*
+           Boy ke eye-level ke aas paas
+        */
+        top: 300px;
+
+        width: 70px;
+        height: 70px;
+
+        /*
+           Boy ke right side move
+        */
+        transform: translateX(100px);
+
+        z-index: 6;
+    }
+
+    .premium-icon {
+        width: 27px;
+        height: 17px;
+    }
+
+    .premium-icon svg {
+        width: 27px;
+        height: 17px;
+    }
+
+    .premium-badge p {
+        font-size: 9px;
+    }
+
+
+    /* =========================================
+       BOY IMAGE
+       MOBILE — CENTER
+    ========================================== */
+
+    .hero-boy {
+
+        /*
+           Boy bottom ko touch karega
+        */
+        bottom: 0;
+
+        /*
+           Screen center
+        */
+        right: 50%;
+
+        /*
+           Boy ko exact center mein laana
+        */
+        transform: translateX(50%);
+
+        /*
+           Mobile boy size
+        */
+        height: 57%;
+
+        width: auto;
+
+        max-width: none;
+
+        z-index: 4;
+    }
+
+
+    /* =========================================
+       BACKGROUND LIGHT
+    ========================================== */
+
+    .hero-section::after {
+        width: 260px;
+        height: 260px;
+
+        right: -5%;
+        top: 270px;
+
+        opacity: 0.8;
+    }
+
+    .hero-section::before {
+        width: 150px;
+        height: 150px;
+
+        left: 42%;
+        top: 275px;
+
+        opacity: 0.7;
+    }
+
+
+    /* =========================================
+       BENEFITS BAR
+       MOBILE — 4 ITEMS ONE ROW
+    ========================================== */
+
+    .hero-benefits {
+
+        left: 4%;
+        right: 4%;
+
+        bottom: 12px;
+
+        /*
+           IMPORTANT:
+           Four columns in ONE row
+        */
+        grid-template-columns: repeat(4, 1fr);
+
+        /*
+           Desktop jaisi single-row bar
+        */
+        min-height: 58px;
+
+        padding: 7px 5px;
+
+        gap: 0;
+
+        border-radius: 13px;
+
+        z-index: 10;
+    }
+
+
+    /* =========================================
+       BENEFIT ITEM — MOBILE
+    ========================================== */
+
+    .benefit-item {
+
+        min-width: 0;
+        min-height: 40px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 4px;
+
+        padding: 4px 4px;
+
+        border-right: 1px solid rgba(80, 80, 80, 0.08);
+    }
+
+    .benefit-item:last-child {
+        border-right: none;
+    }
+
+
+    /* =========================================
+       BENEFIT ICON — MOBILE
+    ========================================== */
+
+    .benefit-icon {
+
+        width: 18px;
+        height: 18px;
+
+        flex-shrink: 0;
+    }
+
+    .benefit-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    /* =========================================
+       BENEFIT TEXT — MOBILE
+    ========================================== */
+
+    .benefit-text {
+
+        min-width: 0;
+
+        white-space: nowrap;
+    }
+
+    .benefit-text span {
+        font-size: 7.5px;
+
+        line-height: 1.05;
+    }
+
+    .benefit-text small {
+        margin-top: 1px;
+
+        font-size: 7px;
+
+        line-height: 1.05;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES — 430px
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .hero-section {
+
+        height: 690px;
+        min-height: 690px;
+
+        background-position: 57% center;
+    }
+
+
+    /* =========================================
+       NAVBAR
+    ========================================== */
+
+    .navbar {
+
+        left: 8px;
+        right: 8px;
+
+        height: 59px;
+
+        padding: 0 13px;
+    }
+
+
+    .logo {
+        width: 105px;
+    }
+
+    .logo img {
+        width: 98px;
+    }
+
+
+    .navbar-whatsapp {
+
+        width: 102px;
+        min-width: 102px;
+
+        height: 31px;
+
+        font-size: 9px;
+    }
+
+
+    /* =========================================
+       CONTENT
+    ========================================== */
+
+    .hero-content {
+
+        left: 6.5%;
+
+        top: 105px;
+
+        width: 87%;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 46px;
+
+        letter-spacing: -1.8px;
+    }
+
+    .hero-content h2 {
+        font-size: 13px;
+    }
+
+    .hero-content p {
+        font-size: 10.5px;
+    }
+
+
+    /* =========================================
+       BUTTONS
+    ========================================== */
+
+    .hero-buttons {
+        gap: 7px;
+    }
+
+    .primary-btn {
+        width: 148px;
+    }
+
+    .whatsapp-btn {
+        width: 137px;
+    }
+
+    .hero-btn {
+
+        height: 34px;
+
+        font-size: 9.5px;
+    }
+
+
+    /* =========================================
+       PREMIUM BADGE — 430
+    ========================================== */
+
+    .premium-badge {
+
+        left: 50%;
+        right: auto;
+
+        top: 292px;
+
+        width: 65px;
+        height: 65px;
+
+        transform: translateX(92px);
+    }
+
+    .premium-badge p {
+        font-size: 8.5px;
+    }
+
+
+    /* =========================================
+       BOY — 430
+    ========================================== */
+
+    .hero-boy {
+
+        bottom: 0;
+
+        right: 50%;
+
+        height: 55%;
+
+        width: auto;
+
+        max-width: none;
+
+        transform: translateX(50%);
+
+        z-index: 4;
+    }
+
+
+    /* =========================================
+       BENEFITS — 430
+       STILL ONE ROW
+    ========================================== */
+
+    .hero-benefits {
+
+        left: 4%;
+        right: 4%;
+
+        bottom: 10px;
+
+        min-height: 58px;
+
+        padding: 6px 4px;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 0;
+    }
+
+
+    .benefit-item {
+
+        min-height: 42px;
+
+        padding: 3px 3px;
+
+        gap: 3px;
+    }
+
+
+    .benefit-icon {
+
+        width: 17px;
+        height: 17px;
+    }
+
+    .benefit-icon svg {
+
+        width: 15px;
+        height: 15px;
+    }
+
+
+    .benefit-text span {
+        font-size: 7px;
+    }
+
+    .benefit-text small {
+        font-size: 6.5px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .hero-section {
+
+        height: 660px;
+        min-height: 660px;
+    }
+
+
+    /* =========================================
+       NAVBAR
+    ========================================== */
+
+    .navbar-whatsapp {
+
+        width: 94px;
+        min-width: 94px;
+
+        font-size: 8px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+
+    /* =========================================
+       CONTENT
+    ========================================== */
+
+    .hero-content h1 {
+        font-size: 41px;
+    }
+
+    .hero-content h2 {
+        font-size: 12px;
+    }
+
+    .hero-content p {
+        font-size: 10px;
+    }
+
+
+    /* =========================================
+       BUTTONS
+    ========================================== */
+
+    .primary-btn {
+        width: 137px;
+    }
+
+    .whatsapp-btn {
+        width: 127px;
+    }
+
+    .hero-btn {
+        font-size: 8.5px;
+    }
+
+
+    /* =========================================
+       BOY — 360
+    ========================================== */
+
+    .hero-boy {
+
+        bottom: 0;
+
+        right: 50%;
+
+        height: 53%;
+
+        transform: translateX(50%);
+    }
+
+
+    /* =========================================
+       PREMIUM — 360
+    ========================================== */
+
+    .premium-badge {
+
+        left: 50%;
+        right: auto;
+
+        top: 280px;
+
+        width: 60px;
+        height: 60px;
+
+        transform: translateX(82px);
+    }
+
+    .premium-badge p {
+        font-size: 8px;
+    }
+
+
+    /* =========================================
+       BENEFITS — 360
+       ONE ROW
+    ========================================== */
+
+    .hero-benefits {
+
+        left: 3%;
+        right: 3%;
+
+        bottom: 9px;
+
+        min-height: 56px;
+
+        padding: 5px 3px;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 0;
+    }
+
+
+    .benefit-item {
+
+        min-height: 40px;
+
+        padding: 3px 2px;
+
+        gap: 2px;
+    }
+
+
+    .benefit-icon {
+
+        width: 15px;
+        height: 15px;
+    }
+
+    .benefit-icon svg {
+
+        width: 13px;
+        height: 13px;
+    }
+
+
+    .benefit-text span {
+        font-size: 6.3px;
+    }
+
+    .benefit-text small {
+        font-size: 5.8px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — PREMIUM EYEWEAR BADGE
+   Eye level ke paas
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .premium-badge {
+        top: 365px;
+        right: 9%;
+    }
+
+}
+
+
+/* Small phones */
+@media (max-width: 430px) {
+
+    .premium-badge {
+        top: 350px;
+        right: 7%;
+    }
+
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    .premium-badge {
+        top: 335px;
+        right: 6%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR — FINAL
+========================================================= */
+
+
+/* Mobile menu button hidden on desktop */
+
+.mobile-menu-btn {
+    display: none;
+}
+
+
+/* Mobile dropdown hidden */
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* -----------------------------------------
+       NAVBAR
+    ----------------------------------------- */
+
+    .navbar {
+        display: flex;
+        align-items: center;
+
+        left: 8px;
+        right: 8px;
+
+        height: 59px;
+
+        padding: 0 12px;
+
+        border-radius: 0 0 15px 15px;
+
+        z-index: 100;
+    }
+
+
+    /* -----------------------------------------
+       LOGO
+    ----------------------------------------- */
+
+    .logo {
+        width: auto;
+
+        flex: 1;
+    }
+
+    .logo img {
+        width: 98px;
+        height: auto;
+    }
+
+
+    /* -----------------------------------------
+       DESKTOP LINKS HIDE
+    ----------------------------------------- */
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* -----------------------------------------
+       WHATSAPP BUTTON
+    ----------------------------------------- */
+
+    .navbar-whatsapp {
+        width: 102px;
+        min-width: 102px;
+
+        height: 31px;
+
+        margin-right: 9px;
+
+        border-radius: 8px;
+
+        font-size: 9px;
+
+        gap: 5px;
+    }
+
+
+    /* -----------------------------------------
+       MOBILE HAMBURGER
+    ----------------------------------------- */
+
+    .mobile-menu-btn {
+
+        display: flex;
+
+        width: 34px;
+        height: 34px;
+
+        padding: 0;
+
+        border: 1px solid rgba(0, 0, 0, 0.08);
+
+        border-radius: 9px;
+
+        background: rgba(255, 255, 255, 0.72);
+
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+
+        gap: 4px;
+
+        cursor: pointer;
+
+        box-shadow:
+            0 4px 12px rgba(0, 0, 0, 0.06);
+
+        z-index: 110;
+    }
+
+
+    .mobile-menu-btn span {
+
+        display: block;
+
+        width: 15px;
+        height: 1.7px;
+
+        border-radius: 10px;
+
+        background: #222;
+
+        transition:
+            transform 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+
+    /* -----------------------------------------
+       HAMBURGER → X
+    ----------------------------------------- */
+
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: translateY(5.7px) rotate(45deg);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: translateY(-5.7px) rotate(-45deg);
+    }
+
+
+    /* -----------------------------------------
+       MOBILE DROPDOWN
+    ----------------------------------------- */
+
+    .mobile-menu {
+
+        position: absolute;
+
+        display: flex;
+
+        top: 67px;
+
+        left: 8px;
+        right: 8px;
+
+        padding: 10px;
+
+        flex-direction: column;
+
+        gap: 3px;
+
+        background: rgba(255, 255, 255, 0.88);
+
+        border: 1px solid rgba(255, 255, 255, 0.85);
+
+        border-radius: 13px;
+
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        box-shadow:
+            0 12px 30px rgba(0, 0, 0, 0.10),
+            inset 0 1px 0 rgba(255, 255, 255, 0.95);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(-8px);
+
+        transition:
+            opacity 0.25s ease,
+            visibility 0.25s ease,
+            transform 0.25s ease;
+
+        z-index: 90;
+    }
+
+
+    /* Menu open */
+
+    .mobile-menu.open {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+
+    /* -----------------------------------------
+       MOBILE MENU LINKS
+    ----------------------------------------- */
+
+    .mobile-menu a {
+
+        display: flex;
+
+        align-items: center;
+
+        min-height: 42px;
+
+        padding: 0 15px;
+
+        border-radius: 9px;
+
+        color: #222;
+
+        font-size: 13px;
+
+        font-weight: 600;
+
+        transition:
+            background 0.2s ease,
+            color 0.2s ease;
+    }
+
+
+    .mobile-menu a:hover {
+
+        color: #18822f;
+
+        background: rgba(24, 130, 47, 0.07);
+    }
+
+
+    .mobile-menu a.active {
+
+        color: #18822f;
+
+        background: rgba(24, 130, 47, 0.08);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .navbar {
+
+        height: 59px;
+
+        padding: 0 11px;
+    }
+
+
+    .logo img {
+
+        width: 94px;
+    }
+
+
+    .navbar-whatsapp {
+
+        width: 98px;
+        min-width: 98px;
+
+        height: 30px;
+
+        margin-right: 7px;
+
+        font-size: 8.5px;
+    }
+
+
+    .mobile-menu-btn {
+
+        width: 33px;
+        height: 33px;
+    }
+
+
+    .mobile-menu {
+
+        top: 66px;
+
+        left: 8px;
+        right: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .navbar-whatsapp {
+
+        width: 91px;
+        min-width: 91px;
+
+        font-size: 8px;
+    }
+
+
+    .logo img {
+
+        width: 88px;
+    }
+
+
+    .mobile-menu-btn {
+
+        width: 32px;
+        height: 32px;
+    }
+
+}
+
+
+
+/* =========================================================
+   abbb section 2 start hora ha bhai
+========================================================= */
+
+/* =========================================================
+   COLLECTIONS SECTION
+========================================================= */
+
+.collections-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 85px 6.5% 90px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    text-align: center;
+
+    max-width: 620px;
+
+    margin: 0 auto 45px;
+}
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #16852f;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 0 0 10px;
+
+    color: #111;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+    font-weight: 700;
+}
+
+.section-heading p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   COLLECTIONS GRID
+========================================================= */
+
+.collections-grid {
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   COLLECTION CARD
+========================================================= */
+
+.collection-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.11);
+}
+
+
+/* =========================================================
+   COLLECTION IMAGE
+========================================================= */
+
+.collection-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 245px;
+
+    overflow: hidden;
+
+    background: #f5f5f5;
+}
+
+.collection-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 65%,
+            rgba(0, 0, 0, 0.08)
+        );
+
+    pointer-events: none;
+}
+
+.collection-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+.collection-card:hover .collection-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   COLLECTION INFO
+========================================================= */
+
+.collection-info {
+    min-height: 105px;
+
+    padding: 18px 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,1),
+            rgba(248,250,248,1)
+        );
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.collection-number {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #16852f;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.collection-info h3 {
+    margin: 0 0 5px;
+
+    color: #151515;
+
+    font-size: 15px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.collection-info p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 9.5px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   CARD ARROW
+========================================================= */
+
+.collection-arrow {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #16852f;
+
+    background: rgba(22, 133, 47, 0.08);
+
+    border: 1px solid rgba(22, 133, 47, 0.10);
+
+    border-radius: 50%;
+
+    font-size: 17px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.collection-card:hover .collection-arrow {
+    color: #fff;
+
+    background: #16852f;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .collections-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+    .collection-image {
+        height: 260px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .collections-section {
+
+        padding: 65px 6% 70px;
+    }
+
+
+    /* Heading */
+
+    .section-heading {
+
+        margin-bottom: 32px;
+    }
+
+    .section-label {
+
+        margin-bottom: 8px;
+
+        font-size: 8.5px;
+
+        letter-spacing: 1.7px;
+    }
+
+    .section-heading h2 {
+
+        margin-bottom: 9px;
+
+        font-size: 29px;
+
+        letter-spacing: -0.7px;
+    }
+
+    .section-heading p {
+
+        font-size: 11px;
+
+        line-height: 1.55;
+    }
+
+
+    /* Cards */
+
+    .collections-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 13px;
+    }
+
+
+    .collection-card {
+
+        border-radius: 14px;
+    }
+
+
+    .collection-image {
+
+        height: 190px;
+    }
+
+
+    .collection-info {
+
+        min-height: 90px;
+
+        padding: 13px 11px;
+
+        gap: 6px;
+    }
+
+
+    .collection-number {
+
+        margin-bottom: 4px;
+
+        font-size: 7px;
+
+        letter-spacing: 0.8px;
+    }
+
+
+    .collection-info h3 {
+
+        margin-bottom: 4px;
+
+        font-size: 12px;
+    }
+
+
+    .collection-info p {
+
+        font-size: 8px;
+    }
+
+
+    .collection-arrow {
+
+        width: 28px;
+        height: 28px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .collections-section {
+
+        padding: 55px 5% 60px;
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 27px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 26px;
+    }
+
+
+    .section-heading p {
+
+        padding: 0 8px;
+
+        font-size: 10px;
+    }
+
+
+    .collections-grid {
+
+        gap: 10px;
+    }
+
+
+    .collection-image {
+
+        height: 165px;
+    }
+
+
+    .collection-info {
+
+        min-height: 82px;
+
+        padding: 11px 9px;
+    }
+
+
+    .collection-info h3 {
+
+        font-size: 10.5px;
+    }
+
+
+    .collection-info p {
+
+        font-size: 7px;
+    }
+
+
+    .collection-arrow {
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .collections-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .collection-image {
+
+        height: 210px;
+    }
+
+
+    .collection-info {
+
+        min-height: 88px;
+    }
+
+
+    .collection-info h3 {
+
+        font-size: 13px;
+    }
+
+
+    .collection-info p {
+
+        font-size: 8px;
+    }
+}
+
+/* section 3 ki css ha bhai */
+/* =========================================================
+   SECTION 3
+   SERVICES & FITTING SECTION
+========================================================= */
+
+.services-section {
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 85px 6.5% 90px;
+
+    background-image:
+       
+        url("../images/services-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+
+/* =========================================================
+   SERVICES HEADING
+========================================================= */
+
+.services-heading {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 42px;
+
+    text-align: center;
+}
+
+
+.services-heading .section-label {
+
+    color: #16852f;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.services-heading h2 {
+
+    margin: 10px 0 12px;
+
+    color: #111;
+
+    font-size: 42px;
+
+    line-height: 1.12;
+
+    font-weight: 750;
+
+    letter-spacing: -1px;
+}
+
+
+.services-heading p {
+
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+}
+
+
+
+/* =========================================================
+   DECORATIVE DIVIDER
+========================================================= */
+
+.services-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.services-divider span {
+
+    display: block;
+
+    width: 55px;
+
+    height: 1.5px;
+
+    background: #16852f;
+
+    border-radius: 10px;
+}
+
+
+.services-divider i {
+
+    display: block;
+
+    width: 9px;
+
+    height: 9px;
+
+    background: #16852f;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 5px rgba(22, 133, 47, 0.08);
+}
+
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 405px;
+
+    padding: 25px 28px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.94),
+            rgba(250, 252, 249, 0.86)
+        );
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.07);
+
+    backdrop-filter: blur(7px);
+
+    -webkit-backdrop-filter: blur(7px);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+
+/* =========================================================
+   CARD SOFT LIGHT
+========================================================= */
+
+.service-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+
+    right: -100px;
+
+    width: 230px;
+
+    height: 230px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(22, 133, 47, 0.12),
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+.service-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: -80px;
+
+    bottom: -100px;
+
+    width: 190px;
+
+    height: 190px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(22, 133, 47, 0.055),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(22, 133, 47, 0.20);
+
+    box-shadow:
+        0 22px 45px rgba(0, 0, 0, 0.11);
+}
+
+
+.service-card:hover::before {
+
+    transform: scale(1.3);
+
+    opacity: 1.2;
+}
+
+
+
+/* =========================================================
+   SERVICE MAIN ICON
+========================================================= */
+
+.service-icon {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 72px;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #16852f;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(230, 245, 232, 0.95),
+            rgba(245, 250, 244, 0.90)
+        );
+
+    border: 1px solid
+        rgba(22, 133, 47, 0.10);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 8px 20px rgba(22, 133, 47, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+
+/* =========================================================
+   MAIN SVG
+========================================================= */
+
+.service-icon svg {
+
+    width: 40px;
+
+    height: 40px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.service-card:hover .service-icon {
+
+    transform:
+        scale(1.07)
+        rotate(-3deg);
+
+    color: #ffffff;
+
+    background: #16852f;
+
+    box-shadow:
+        0 12px 25px rgba(22, 133, 47, 0.24);
+}
+
+
+.service-card:hover .service-icon svg {
+
+    transform: scale(1.08);
+}
+
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.service-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 24px;
+}
+
+
+
+/* =========================================================
+   SERVICE NUMBER
+========================================================= */
+
+.service-number {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #16852f;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
+
+.service-content h3 {
+
+    margin: 0;
+
+    color: #151515;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    font-weight: 750;
+
+    letter-spacing: -0.3px;
+}
+
+
+
+/* =========================================================
+   SMALL GREEN TITLE LINE
+========================================================= */
+
+.service-title-line {
+
+    width: 48px;
+
+    height: 2px;
+
+    margin-top: 12px;
+
+    margin-bottom: 13px;
+
+    background: #16852f;
+
+    border-radius: 10px;
+
+    transition:
+        width 0.35s ease;
+}
+
+
+.service-card:hover .service-title-line {
+
+    width: 68px;
+}
+
+
+
+/* =========================================================
+   SERVICE DESCRIPTION
+========================================================= */
+
+.service-content p {
+
+    max-width: 390px;
+
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+}
+
+
+
+/* =========================================================
+   SERVICE FEATURES CONTAINER
+========================================================= */
+
+.service-features {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+
+    min-height: 72px;
+
+    margin-top: auto;
+
+    padding: 12px 8px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: center;
+
+    gap: 5px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(237, 247, 234, 0.90),
+            rgba(248, 252, 247, 0.92)
+        );
+
+    border-radius: 16px;
+
+    border: 1px solid
+        rgba(22, 133, 47, 0.035);
+}
+
+
+
+/* =========================================================
+   INDIVIDUAL FEATURE
+========================================================= */
+
+.service-feature {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    text-align: center;
+}
+
+
+
+/* =========================================================
+   FEATURE SVG ICON
+========================================================= */
+
+.service-feature svg {
+
+    width: 21px;
+
+    height: 21px;
+
+    flex-shrink: 0;
+
+    fill: none;
+
+    stroke: #4c7e3d;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    transition:
+        transform 0.3s ease,
+        stroke 0.3s ease;
+}
+
+
+.service-feature:hover svg {
+
+    transform: translateY(-2px) scale(1.08);
+
+    stroke: #16852f;
+}
+
+
+
+/* =========================================================
+   FEATURE TEXT
+========================================================= */
+
+.service-feature span {
+
+    display: block;
+
+    max-width: 100%;
+
+    color: #303b31;
+
+    font-size: 10px;
+
+    line-height: 1.2;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .services-section {
+
+        padding: 70px 5% 75px;
+    }
+
+
+    .services-heading {
+
+        margin-bottom: 38px;
+    }
+
+
+    .services-heading h2 {
+
+        font-size: 36px;
+    }
+
+
+    .services-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+
+    .service-card {
+
+        min-height: 385px;
+
+        padding: 23px 23px 18px;
+
+        border-radius: 20px;
+    }
+
+
+    .service-icon {
+
+        width: 65px;
+
+        height: 65px;
+    }
+
+
+    .service-icon svg {
+
+        width: 36px;
+
+        height: 36px;
+    }
+
+
+    .service-content {
+
+        margin-top: 21px;
+    }
+
+
+    .service-content h3 {
+
+        font-size: 20px;
+    }
+
+
+    .service-content p {
+
+        font-size: 12px;
+    }
+
+
+    .service-features {
+
+        min-height: 67px;
+
+        border-radius: 14px;
+    }
+
+
+    .service-feature svg {
+
+        width: 19px;
+
+        height: 19px;
+    }
+
+
+    .service-feature span {
+
+        font-size: 9px;
+    }
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .services-section {
+
+        padding: 60px 5% 65px;
+
+        background-position: center center;
+    }
+
+
+    /* -----------------------------------------
+       HEADING
+    ----------------------------------------- */
+
+    .services-heading {
+
+        margin-bottom: 30px;
+    }
+
+
+    .services-heading .section-label {
+
+        font-size: 8.5px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .services-heading h2 {
+
+        margin-top: 9px;
+
+        margin-bottom: 10px;
+
+        font-size: 29px;
+
+        line-height: 1.2;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .services-heading p {
+
+        font-size: 11px;
+
+        line-height: 1.55;
+    }
+
+
+    .services-heading-break {
+
+        display: none;
+    }
+
+
+    .services-divider {
+
+        margin-top: 16px;
+
+        gap: 8px;
+    }
+
+
+    .services-divider span {
+
+        width: 42px;
+    }
+
+
+    .services-divider i {
+
+        width: 7px;
+
+        height: 7px;
+    }
+
+
+
+    /* -----------------------------------------
+       GRID
+    ----------------------------------------- */
+
+    .services-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 13px;
+    }
+
+
+
+    /* -----------------------------------------
+       CARD
+    ----------------------------------------- */
+
+    .service-card {
+
+        min-height: 350px;
+
+        padding: 18px 14px 13px;
+
+        border-radius: 16px;
+
+        box-shadow:
+            0 9px 25px rgba(0, 0, 0, 0.065);
+    }
+
+
+
+    /* -----------------------------------------
+       MAIN ICON
+    ----------------------------------------- */
+
+    .service-icon {
+
+        width: 52px;
+
+        height: 52px;
+    }
+
+
+    .service-icon svg {
+
+        width: 29px;
+
+        height: 29px;
+    }
+
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .service-content {
+
+        margin-top: 17px;
+    }
+
+
+    .service-number {
+
+        margin-bottom: 6px;
+
+        font-size: 8px;
+
+        letter-spacing: 1.3px;
+    }
+
+
+    .service-content h3 {
+
+        font-size: 14px;
+
+        line-height: 1.3;
+
+        letter-spacing: -0.1px;
+    }
+
+
+    .service-title-line {
+
+        width: 36px;
+
+        height: 1.5px;
+
+        margin-top: 9px;
+
+        margin-bottom: 9px;
+    }
+
+
+    .service-content p {
+
+        font-size: 8.5px;
+
+        line-height: 1.55;
+    }
+
+
+
+    /* -----------------------------------------
+       FEATURES
+    ----------------------------------------- */
+
+    .service-features {
+
+        min-height: 62px;
+
+        margin-top: 14px;
+
+        padding: 9px 4px;
+
+        gap: 2px;
+
+        border-radius: 12px;
+    }
+
+
+    .service-feature {
+
+        gap: 5px;
+    }
+
+
+    .service-feature svg {
+
+        width: 17px;
+
+        height: 17px;
+
+        stroke-width: 1.7;
+    }
+
+
+    .service-feature span {
+
+        font-size: 7px;
+
+        line-height: 1.15;
+
+        white-space: normal;
+    }
+
+}
+
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .services-section {
+
+        padding-left: 4.5%;
+
+        padding-right: 4.5%;
+    }
+
+
+    .services-heading h2 {
+
+        font-size: 26px;
+    }
+
+
+    .services-heading p {
+
+        font-size: 10px;
+    }
+
+
+    .services-grid {
+
+        gap: 10px;
+    }
+
+
+    .service-card {
+
+        min-height: 330px;
+
+        padding: 16px 11px 11px;
+
+        border-radius: 14px;
+    }
+
+
+    .service-icon {
+
+        width: 48px;
+
+        height: 48px;
+    }
+
+
+    .service-icon svg {
+
+        width: 26px;
+
+        height: 26px;
+    }
+
+
+    .service-content {
+
+        margin-top: 15px;
+    }
+
+
+    .service-content h3 {
+
+        font-size: 12px;
+    }
+
+
+    .service-content p {
+
+        font-size: 7.5px;
+
+        line-height: 1.5;
+    }
+
+
+    .service-features {
+
+        min-height: 58px;
+
+        padding: 7px 2px;
+    }
+
+
+    .service-feature svg {
+
+        width: 15px;
+
+        height: 15px;
+    }
+
+
+    .service-feature span {
+
+        font-size: 6.5px;
+    }
+
+}
+
+
+
+/*====ab section 4 css a gai ha bhai */
+
+/* =========================================================
+   SECTION 4
+   WHY CHOOSE US + LOCATION
+========================================================= */
+
+.about-location-section {
+
+    width: 100%;
+
+    padding: 70px 6.5% 80px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f7f8f5 100%
+        );
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+}
+
+
+/* =========================================================
+   COMMON CARD STYLE
+========================================================= */
+
+.why-choose-card,
+.location-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 480px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    border: 1px solid
+        rgba(0, 0, 0, 0.06);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.why-choose-card:hover,
+.location-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(22, 133, 47, 0.15);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* =========================================================
+   WHY CHOOSE CARD
+========================================================= */
+
+.why-choose-card {
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+}
+
+
+/* =========================================================
+   WHY CONTENT
+========================================================= */
+
+.why-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 42px 30px 38px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.why-content .section-label,
+.location-content .section-label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #16852f;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   WHY HEADING
+========================================================= */
+
+.why-content h2 {
+
+    margin: 0 0 13px;
+
+    color: #151515;
+
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+}
+
+
+.why-content h2 span {
+
+    color: #16852f;
+
+}
+
+
+/* =========================================================
+   WHY DESCRIPTION
+========================================================= */
+
+.why-content > p {
+
+    margin: 0 0 25px;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.65;
+
+    max-width: 330px;
+
+}
+
+
+/* =========================================================
+   WHY LIST
+========================================================= */
+
+.why-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+}
+
+
+/* =========================================================
+   WHY ITEM
+========================================================= */
+
+.why-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    color: #4f4f4f;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+}
+
+
+/* =========================================================
+   CHECK ICON
+========================================================= */
+
+.why-check {
+
+    width: 21px;
+
+    height: 21px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #16852f;
+
+    background:
+        rgba(22, 133, 47, 0.09);
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+
+}
+
+
+/* =========================================================
+   CHECK HOVER
+========================================================= */
+
+.why-item:hover .why-check {
+
+    transform: scale(1.12);
+
+    color: #fff;
+
+    background: #16852f;
+
+}
+
+
+/* =========================================================
+   WHY IMAGE
+========================================================= */
+
+.why-image {
+
+    position: relative;
+
+    min-height: 100%;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   WHY IMAGE OVERLAY
+========================================================= */
+
+.why-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.05),
+            rgba(22,133,47,0.08)
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   WHY IMAGE
+========================================================= */
+
+.why-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.6s ease;
+
+}
+
+
+.why-choose-card:hover .why-image img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================================================
+   LOCATION CARD
+========================================================= */
+
+.location-card {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+}
+
+
+/* =========================================================
+   LOCATION CONTENT
+========================================================= */
+
+.location-content {
+
+    padding: 38px 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   LOCATION HEADING
+========================================================= */
+
+.location-content h2 {
+
+    margin: 0 0 8px;
+
+    color: #151515;
+
+    font-size: 28px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   LOCATION DESCRIPTION
+========================================================= */
+
+.location-content > p {
+
+    margin: 0 0 25px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   LOCATION ITEM
+========================================================= */
+
+.location-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.location-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   LOCATION ICON
+========================================================= */
+
+.location-icon {
+
+    width: 35px;
+
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #16852f;
+
+    background:
+        rgba(22, 133, 47, 0.08);
+
+    border-radius: 50%;
+
+}
+
+
+.location-icon svg {
+
+    width: 18px;
+
+    height: 18px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* =========================================================
+   LOCATION TEXT
+========================================================= */
+
+.location-item strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #202020;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.location-item p {
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 9.5px;
+
+    line-height: 1.55;
+
+}
+
+
+.location-item a {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #555;
+
+    font-size: 10px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease;
+
+}
+
+
+.location-item a:hover {
+
+    color: #16852f;
+
+}
+
+
+/* =========================================================
+   LOCATION MAP
+========================================================= */
+
+.location-map {
+
+    position: relative;
+
+    min-height: 100%;
+
+    overflow: hidden;
+
+    background: #eef1ed;
+
+}
+
+
+/* =========================================================
+   MAP IMAGE
+========================================================= */
+
+.location-map > img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    filter:
+        saturate(0.85);
+
+    transition:
+        transform 0.6s ease;
+
+}
+
+
+.location-card:hover .location-map > img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* =========================================================
+   MAP MARKER
+========================================================= */
+
+.map-marker {
+
+    position: absolute;
+
+    top: 42%;
+
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   MAP PIN
+========================================================= */
+
+.map-pin {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #fff;
+
+    background: #16852f;
+
+    border: 5px solid
+        rgba(255, 255, 255, 0.9);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.20);
+
+    animation:
+        mapPulse 2s infinite;
+
+}
+
+
+.map-pin svg {
+
+    width: 21px;
+
+    height: 21px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* =========================================================
+   MAP PULSE
+========================================================= */
+
+@keyframes mapPulse {
+
+    0% {
+
+        box-shadow:
+            0 0 0 0
+            rgba(22, 133, 47, 0.35),
+            0 8px 25px
+            rgba(0, 0, 0, 0.20);
+
+    }
+
+    70% {
+
+        box-shadow:
+            0 0 0 15px
+            rgba(22, 133, 47, 0),
+            0 8px 25px
+            rgba(0, 0, 0, 0.20);
+
+    }
+
+    100% {
+
+        box-shadow:
+            0 0 0 0
+            rgba(22, 133, 47, 0),
+            0 8px 25px
+            rgba(0, 0, 0, 0.20);
+
+    }
+
+}
+
+
+/* =========================================================
+   MAP BUSINESS NAME
+========================================================= */
+
+.map-marker span {
+
+    padding: 7px 12px;
+
+    color: #202020;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.10);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   GOOGLE MAP BUTTON
+========================================================= */
+
+.google-map-btn {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 18px;
+
+    transform:
+        translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 10px 16px;
+
+    color: #fff;
+
+    background: #16852f;
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(22, 133, 47, 0.25);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.google-map-btn:hover {
+
+    transform:
+        translateX(-50%)
+        translateY(-3px);
+
+    background: #116c26;
+
+    box-shadow:
+        0 12px 25px
+        rgba(22, 133, 47, 0.30);
+
+}
+
+
+.google-map-btn svg {
+
+    width: 15px;
+
+    height: 15px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-location-section {
+
+        padding: 65px 5% 70px;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .why-choose-card,
+    .location-card {
+
+        min-height: 430px;
+
+    }
+
+
+    .why-content {
+
+        padding: 35px 28px;
+
+    }
+
+
+    .why-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .location-content {
+
+        padding: 32px 25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-location-section {
+
+        padding: 55px 6% 65px;
+
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+    }
+
+
+    /* -----------------------------------------
+       WHY CHOOSE CARD
+    ----------------------------------------- */
+
+    .why-choose-card {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+    }
+
+
+    .why-content {
+
+        padding: 30px 22px 28px;
+
+    }
+
+
+    .why-content .section-label,
+    .location-content .section-label {
+
+        font-size: 8px;
+
+        letter-spacing: 1.6px;
+
+    }
+
+
+    .why-content h2 {
+
+        margin-bottom: 10px;
+
+        font-size: 26px;
+
+    }
+
+
+    .why-content > p {
+
+        margin-bottom: 20px;
+
+        font-size: 10px;
+
+    }
+
+
+    .why-list {
+
+        gap: 10px;
+
+    }
+
+
+    .why-item {
+
+        gap: 9px;
+
+        font-size: 9.5px;
+
+    }
+
+
+    .why-check {
+
+        width: 19px;
+
+        height: 19px;
+
+        font-size: 10px;
+
+    }
+
+
+    /* -----------------------------------------
+       WHY IMAGE
+    ----------------------------------------- */
+
+    .why-image {
+
+        height: 190px;
+
+        min-height: 190px;
+
+    }
+
+
+    /* -----------------------------------------
+       LOCATION CARD
+    ----------------------------------------- */
+
+    .location-card {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+    }
+
+
+    .location-content {
+
+        padding: 30px 22px;
+
+    }
+
+
+    .location-content h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .location-content > p {
+
+        margin-bottom: 20px;
+
+        font-size: 10px;
+
+    }
+
+
+    .location-item {
+
+        gap: 10px;
+
+        margin-bottom: 17px;
+
+    }
+
+
+    .location-icon {
+
+        width: 32px;
+
+        height: 32px;
+
+    }
+
+
+    .location-icon svg {
+
+        width: 16px;
+
+        height: 16px;
+
+    }
+
+
+    .location-item strong {
+
+        font-size: 10px;
+
+    }
+
+
+    .location-item p,
+    .location-item a {
+
+        font-size: 9px;
+
+    }
+
+
+    /* -----------------------------------------
+       MAP
+    ----------------------------------------- */
+
+    .location-map {
+
+        height: 260px;
+
+        min-height: 260px;
+
+    }
+
+
+    .map-pin {
+
+        width: 42px;
+
+        height: 42px;
+
+    }
+
+
+    .map-marker span {
+
+        padding: 6px 10px;
+
+        font-size: 8px;
+
+    }
+
+
+    .google-map-btn {
+
+        bottom: 14px;
+
+        padding: 9px 13px;
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .about-location-section {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+    }
+
+
+    .why-content,
+    .location-content {
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+
+    }
+
+
+    .why-content h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .location-content h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .why-image {
+
+        height: 175px;
+
+        min-height: 175px;
+
+    }
+
+
+    .location-map {
+
+        height: 235px;
+
+        min-height: 235px;
+
+    }
+
+}
+
+
+/*=====section 5 start ha bhai bhai ======*/
+
+/* =========================================================
+   SECTION 5
+   FOOTER
+========================================================= */
+
+.site-footer {
+
+    position: relative;
+
+    width: 100%;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #171717 0%,
+            #111111 100%
+        );
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   FOOTER TOP GREEN GLOW
+========================================================= */
+
+.site-footer::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -180px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    height: 300px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(22, 133, 47, 0.13),
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   FOOTER MAIN
+========================================================= */
+
+.footer-main {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 65px 0 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.45fr
+        0.8fr
+        0.95fr
+        1.1fr;
+
+    gap: 45px;
+
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
+
+.footer-brand {
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+}
+
+
+.footer-logo img {
+
+    width: 145px;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   FOOTER DESCRIPTION
+========================================================= */
+
+.footer-description {
+
+    max-width: 280px;
+
+    margin: 20px 0 22px;
+
+    color: #bdbdbd;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   FOOTER SOCIALS
+========================================================= */
+
+.footer-socials {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+/* =========================================================
+   SOCIAL LINK
+========================================================= */
+
+.social-link {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #d8d8d8;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.22);
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.social-link:hover {
+
+    color: #ffffff;
+
+    background: #16852f;
+
+    border-color: #16852f;
+
+    transform: translateY(-4px);
+
+}
+
+
+.social-link svg {
+
+    width: 15px;
+
+    height: 15px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+.social-link:first-child svg {
+
+    fill: currentColor;
+
+    stroke: none;
+
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.footer-column {
+
+    min-width: 0;
+
+}
+
+
+.footer-column h3 {
+
+    position: relative;
+
+    margin: 4px 0 21px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* Small green line */
+
+.footer-column h3::after {
+
+    content: "";
+
+    display: block;
+
+    width: 28px;
+
+    height: 2px;
+
+    margin-top: 8px;
+
+    background: #16852f;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================================================
+   FOOTER LIST
+========================================================= */
+
+.footer-column ul {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+.footer-column li {
+
+    margin-bottom: 11px;
+
+}
+
+
+.footer-column li a {
+
+    color: #a9a9a9;
+
+    font-size: 10.5px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+
+}
+
+
+.footer-column li a:hover {
+
+    color: #ffffff;
+
+    padding-left: 5px;
+
+}
+
+
+/* =========================================================
+   FOOTER CONTACT
+========================================================= */
+
+.footer-contact {
+
+    min-width: 0;
+
+}
+
+
+.footer-contact-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    color: #bdbdbd;
+
+    font-size: 10px;
+
+    line-height: 1.55;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease;
+
+}
+
+
+.footer-contact-item:hover {
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.footer-contact-icon {
+
+    width: 25px;
+
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #16852f;
+
+    background:
+        rgba(22, 133, 47, 0.10);
+
+    border-radius: 50%;
+
+}
+
+
+.footer-contact-icon svg {
+
+    width: 13px;
+
+    height: 13px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 18px 0 20px;
+
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.10);
+
+    text-align: center;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: #888;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   FLOATING WHATSAPP
+========================================================= */
+
+.floating-whatsapp {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 24px;
+
+    z-index: 999;
+
+    width: 54px;
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #25D366;
+
+    border: 3px solid
+        rgba(255, 255, 255, 0.85);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.20);
+
+    text-decoration: none;
+
+    animation:
+        whatsappFloat 3s ease-in-out infinite;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.floating-whatsapp:hover {
+
+    transform: scale(1.1);
+
+    box-shadow:
+        0 12px 30px
+        rgba(37, 211, 102, 0.35);
+
+}
+
+
+.floating-whatsapp svg {
+
+    width: 27px;
+
+    height: 27px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* =========================================================
+   WHATSAPP FLOAT ANIMATION
+========================================================= */
+
+@keyframes whatsappFloat {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-5px);
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .footer-main {
+
+        padding: 55px 5% 40px;
+
+        grid-template-columns:
+            1.3fr
+            1fr
+            1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .footer-brand {
+
+        grid-column: span 3;
+
+    }
+
+
+    .footer-description {
+
+        max-width: 360px;
+
+    }
+
+
+    .footer-bottom {
+
+        width: 90%;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .footer-main {
+
+        padding: 48px 7% 35px;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px 25px;
+
+    }
+
+
+    /* -----------------------------------------
+       BRAND
+    ----------------------------------------- */
+
+    .footer-brand {
+
+        grid-column: span 2;
+
+    }
+
+
+    .footer-logo img {
+
+        width: 135px;
+
+    }
+
+
+    .footer-description {
+
+        margin: 16px 0 20px;
+
+        max-width: 330px;
+
+        font-size: 10px;
+
+        line-height: 1.65;
+
+    }
+
+
+    /* -----------------------------------------
+       COLUMNS
+    ----------------------------------------- */
+
+    .footer-column h3 {
+
+        margin-bottom: 17px;
+
+        font-size: 12px;
+
+    }
+
+
+    .footer-column li {
+
+        margin-bottom: 9px;
+
+    }
+
+
+    .footer-column li a {
+
+        font-size: 9px;
+
+    }
+
+
+    /* -----------------------------------------
+       CONTACT
+    ----------------------------------------- */
+
+    .footer-contact-item {
+
+        gap: 8px;
+
+        margin-bottom: 12px;
+
+        font-size: 8.5px;
+
+    }
+
+
+    .footer-contact-icon {
+
+        width: 23px;
+
+        height: 23px;
+
+    }
+
+
+    .footer-contact-icon svg {
+
+        width: 12px;
+
+        height: 12px;
+
+    }
+
+
+    /* -----------------------------------------
+       BOTTOM
+    ----------------------------------------- */
+
+    .footer-bottom {
+
+        width: 86%;
+
+        padding: 15px 0 18px;
+
+    }
+
+
+    .footer-bottom p {
+
+        font-size: 8px;
+
+    }
+
+
+    /* -----------------------------------------
+       WHATSAPP
+    ----------------------------------------- */
+
+    .floating-whatsapp {
+
+        right: 17px;
+
+        bottom: 17px;
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+
+    .floating-whatsapp svg {
+
+        width: 24px;
+
+        height: 24px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .footer-main {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+
+        gap: 30px 18px;
+
+    }
+
+
+    .footer-description {
+
+        font-size: 9px;
+
+    }
+
+
+    .footer-column li a {
+
+        font-size: 8.5px;
+
+    }
+
+
+    .footer-contact-item {
+
+        font-size: 8px;
+
+    }
+
+
+    .floating-whatsapp {
+
+        width: 45px;
+
+        height: 45px;
+
+        right: 14px;
+
+        bottom: 14px;
+
+    }
+
+}
+
+
+
+
+/*===ya chotia ha ==*/
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-menu {
+
+    position: absolute;
+
+    top: 82px;
+    left: 5%;
+
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 18px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+
+    z-index: 1000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-12px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   MOBILE MENU OPEN
+========================================================= */
+
+.mobile-menu.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================================
+   MOBILE MENU LINKS
+========================================================= */
+
+.mobile-menu a {
+
+    display: block;
+
+    padding: 13px 12px;
+
+    color: #151515;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+
+.mobile-menu a:hover {
+
+    color: #16852f;
+
+    background:
+        rgba(22, 133, 47, 0.07);
+
+    padding-left: 17px;
+
+}
+
+
+.mobile-menu a.active {
+
+    color: #16852f;
+
+    background:
+        rgba(22, 133, 47, 0.07);
+
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-btn {
+
+    position: relative;
+
+    z-index: 1100;
+
+}
+
+
+/* =========================================================
+   HAMBURGER → X
+========================================================= */
+
+.mobile-menu-btn.active span:nth-child(1) {
+
+    transform:
+        translateY(7px)
+        rotate(45deg);
+
+}
+
+
+.mobile-menu-btn.active span:nth-child(2) {
+
+    opacity: 0;
+
+    transform: scaleX(0);
+
+}
+
+
+.mobile-menu-btn.active span:nth-child(3) {
+
+    transform:
+        translateY(-7px)
+        rotate(-45deg);
+
+}
+
+
+/* =========================================================
+   DESKTOP — HIDE MOBILE MENU
+========================================================= */
+
+@media (min-width: 701px) {
+
+    .mobile-menu {
+
+        display: none;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .mobile-menu {
+
+        top: 76px;
+
+        left: 5%;
+
+        width: 90%;
+
+    }
+
+}
