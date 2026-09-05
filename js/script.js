@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const whatsappButtons = document.querySelectorAll(".navbar-whatsapp, .whatsapp-btn, .floating-whatsapp");
     whatsappButtons.forEach((button) => {
         button.addEventListener("click", (event) => {
-            const phoneNumber = "923168903503";
+            const phoneNumber = "923212483793";
             const message = encodeURIComponent("Assalam o Alaikum, I want to know more about M. Suhaib Optical.");
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
             event.preventDefault();
